@@ -7,9 +7,11 @@ const numbers = [12, 7, 0, 30, 1, 22, 8, 31, 14, 19, 4, 9, 20, 16, 27, 6, 26, 29
 function init() {
     const bars = document.querySelectorAll(".bar");
 
-    const firstBar = bars[0];
+    for(let i = 0; i < 40; i++) {
+        const firstBar = bars[i];
 
-    const h = data[0] / 32 * 100;
+        const h = numbers[i] / 32 * 100;
 
-    firstBar.style.height = `${h}px`;
+        firstBar.style.height = `${h}px`;
+    }
 }
